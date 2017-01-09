@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Laser_blu_upgraded</string>
+    <string name="mainActivity">Laser Pulse Settings</string>
+    <string name="periodHint"><font size="18">Period(ms)</font></string>
+    <string name="dutyHint"><font size="18">Duty Cycle(%)</font></string>
+    <string name="pulsesHint"><font size="18">limit 10000</font></string>
+    <string name="peakHint"><font size="18">0-5(V)</font></string>
+    <string name="sendButton">Send</string>
+    <string name="loadButton">Load</string>
+    <string name="graphButton">Graph/View Data</string>
+    <string name="restartButton">Restart</string>
+    <string name="closeButton">Close</string>
+    <string name="saveData1">Save</string>
+    <string name="saveData2">Save Data</string>
+</resources>

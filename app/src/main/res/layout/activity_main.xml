@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.radrajith.laser_blu_upgraded.MainActivity"
+        android:orientation ="vertical">
+
+        <!--Heading-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Connected?"
+            android:id="@+id/headingTextView"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:height="40dp" />
+
+        <!--period-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Period"
+                android:id="@+id/periodTextView"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"/>
+            <EditText
+                android:layout_width="150sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/periodHint"
+                android:inputType="numberSigned"
+                android:id="@+id/periodText"
+                android:phoneNumber="true"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:textAlignment="viewEnd"
+                android:editable="true"
+                android:layout_marginEnd="10sp"/>
+        </LinearLayout>
+
+        <!--Duty Cycle-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:foregroundTint="@android:color/darker_gray">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Duty Cycle"
+                android:id="@+id/dutyTextView"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"/>
+            <EditText
+                android:layout_width="150sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/dutyHint"
+                android:inputType="numberSigned"
+                android:id="@+id/dutyText"
+                android:phoneNumber="true"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:textAlignment="viewEnd"
+                android:editable="true"
+                android:layout_marginEnd="10sp"/>
+        </LinearLayout>
+
+        <!--# of pulses-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation ="horizontal"
+            android:layout_marginEnd="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="# of pulses"
+                android:id="@+id/pulsesTextView"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"/>
+            <EditText
+                android:layout_width="150sp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="@string/pulsesHint"
+                android:inputType="numberSigned"
+                android:id="@+id/pulsesText"
+                android:phoneNumber="true"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:textAlignment="viewEnd"
+                android:editable="true"
+                android:layout_marginEnd="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+        <!--Peak Volt-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation ="horizontal"
+            android:layout_marginEnd="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Peak Voltage"
+                android:id="@+id/peakTextView"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"/>
+            <EditText
+                android:layout_width="150sp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:hint="@string/peakHint"
+                android:inputType="numberSigned"
+                android:id="@+id/peakText"
+                android:phoneNumber="true"
+                android:numeric="integer"
+                android:textSize="25dp"
+                android:textAlignment="viewEnd"
+                android:editable="true"
+                android:layout_marginEnd="10sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/loadButton"
+                android:id="@+id/loadButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:text="@string/sendButton"
+                android:id="@+id/sendButtton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100sp"
+                android:text="@string/graphButton"
+                android:id="@+id/graphButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/closeButton"
+                android:id="@+id/closeButton"
+                android:layout_gravity="right"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="180dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restartButton"
+                android:id="@+id/restartButton"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="180dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveData1"
+                android:id="@+id/saveButton1"
+                android:layout_alignTop="@+id/loadButton"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
