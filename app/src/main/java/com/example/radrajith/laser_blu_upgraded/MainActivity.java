@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText periodVal, dutyVal, pulsesVal, peakVal, objectTemp;
     Button graph;
     int periodLimit = 1000;
-    int peakLimit = 5;
+    double peakLimit = 5.0;
     int pulsesLimit = 10000;
     int dutyLimit = 100;
     private TextView headingText;
@@ -127,11 +127,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 peak =  peakVal.getText().toString();
-                int temp = Integer.parseInt(peak);
+                double temp = Double.parseDouble(peak);
                 if(temp>peakLimit){
                     peakVal.setText(""+peakLimit);
                     peak = ""+peakLimit;
                 }
+                else{}
 
             }
             @Override

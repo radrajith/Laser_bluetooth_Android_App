@@ -142,12 +142,12 @@
                 android:inputType="numberSigned"
                 android:id="@+id/peakText"
                 android:phoneNumber="true"
-                android:numeric="integer"
                 android:textSize="25dp"
                 android:textAlignment="viewEnd"
                 android:editable="true"
                 android:layout_marginEnd="10sp"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:numeric="decimal" />
         </LinearLayout>
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
